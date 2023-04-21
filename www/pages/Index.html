@@ -17,11 +17,22 @@
     <div class="content">
         <div class="module">
             <label>Suelo</label>
-            <a href="" class="enlace"><div class="sensors">
-                <div class="box"><img src="../images/ph.png" class="acomodar"> <label id="valueTemp">50°</label></div>
-                <div class="box"><img src="../images/planta.png" class="acomodar"> <label id="valueTemp">50°</label></div>
-                <div class="box"><img src="../images/plantatemp.png" class="acomodar"> <label id="valueTemp">50°</label></div>
-            </div></a>
+            <a href="" class="enlace">
+                <div class="sensors">
+                    <div class="box">
+                        <a href="./suelo/ph.html"><img src="../images/suelo/ph.png" class="acomodar"></a>
+                        <label id="value-PH">6.5 pH</label>
+                    </div>
+                    <div class="box">
+                        <a href="./suelo/humedad.html"><img src="../images/suelo/humedad.png" class="acomodar"></a> 
+                        <label id="value-Hume">40 %</label>
+                    </div>
+                    <div class="box">
+                        <a href="./suelo/temperatura.html"><img src="../images/suelo/temperatura.png" class="acomodar"></a>
+                        <label id="value-Temp">22 °C</label>
+                    </div>
+                </div>
+            </a>
         </div>
         <div class="module">
             <label>Aire</label>
@@ -79,7 +90,7 @@
                 </div>
                 <div class="box">
                     <div class="control">
-                        <div class="controlItemUp"><img src="../images/lamina.png" class="imgControl"></div>
+                        <div class="controlItemUp" onclick="moveToMalla();"><img src="../images/lamina.png" class="imgControl"></div>
                         <div class="controlItemDown">
                             <div class="toggle-button-cover">
                                 <div class="button-cover">
@@ -98,12 +109,12 @@
                 </div>
                 <div class="box">
                     <div class="control">
-                        <div class="controlItemUp" onclick="changeSprinklers()"><img src="../images/gota.png" class="imgControl"></div>
+                        <div class="controlItemUp" onclick="changeSprinklers()"><img src="../images/aspersor.png" class="imgControl"></div>
                         <div class="controlItemDown">
                             <div class="toggle-button-cover">
                                 <div class="button-cover">
                                     <div class="button b2" id="button-10">
-                                    <input type="checkbox" class="checkbox" />
+                                    <input type="checkbox" class="checkbox">
                                     <div class="knobs">
                                         <span>On</span>
                                     </div>
@@ -119,9 +130,9 @@
         </div>
     </div>
     <footer>
-        <a href="../pages/mouloAire.html" class="quitar"><div class="item"><img src="../images/ondas.png" alt=""> <label>Aire</label></div></a>
-        <a><div class="home"><img src="../images/SACI.png" alt=""></div></a>
-        <a><div class="item"><img src="../images/jardineria.png" alt=""> <label>Suelo</label></div></a>
+        <a href="mouloAire.html" class="quitar"><div class="item"><img src="../images/ondas.png" alt=""> <label>Aire</label></div></a>
+        <a href="Index.html" class="quitar"><div class="home"><img src="../images/SACI.png" alt=""></div></a>
+        <a href="../pages/suelo/gene.html" class="quitar"><div class="item"><img src="../images/jardineria.png" alt=""> <label>Suelo</label></div></a>
     </footer>
 </body>
 </html>
