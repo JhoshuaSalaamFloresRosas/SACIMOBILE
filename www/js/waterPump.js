@@ -23,7 +23,7 @@ console.log('checkAutomatico' + automatico.checked);
 //Encender/apagar bomba Manualmente
 manual.addEventListener('click', function () {
   if (manual.checked) {
-    console.log('El elemento está marcado');
+    console.log('El elemento no está marcado');
 
     $.ajax({
       url: "http://192.168.1.195:5000/apagar_rele",
@@ -32,7 +32,7 @@ manual.addEventListener('click', function () {
         console.log(response);
       },
       error: function (error) {
-        console.error(error);
+        console.error(error); 
       }
     });
 
