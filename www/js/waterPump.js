@@ -30,9 +30,10 @@ manual.addEventListener('click', function () {
       type: "POST",
       success: function (response) {
         console.log(response);
+        
       },
       error: function (error) {
-        console.error(error); 
+        console.error(error);
       }
     });
     setTimeout(function() {
@@ -50,6 +51,7 @@ manual.addEventListener('click', function () {
       type: "POST",
       success: function (response) {
         console.log(response);
+        
       },
       error: function (error) {
         console.error(error);
