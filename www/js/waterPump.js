@@ -21,12 +21,13 @@ console.log('checkAutomatico' + automatico.checked);
 
 
 //Encender/apagar bomba Manualmente
-manual.addEventListener('click', function () {
+const manualEncApa=()=>{
   if (manual.checked) {
-    console.log('El elemento no está marcado');
+   console.log('El elemento no está marcado');
    
+   /*
    $.ajax({
-      url: " https://f8ea-2806-10a6-15-7eab-b987-943d-2e97-d7b8.ngrok-free.app/apagar_bomba",
+      url: " https://2a4d-2806-10a6-15-7eab-8472-148a-aeab-831f.ngrok-free.app/apagar_aspersores",
       type: "POST",
       success: function (response) {
         console.log(response);
@@ -36,6 +37,16 @@ manual.addEventListener('click', function () {
         console.error(error);
       }
     });
+    */
+    const Http = new XMLHttpRequest();
+    const url=' https://2a4d-2806-10a6-15-7eab-8472-148a-aeab-831f.ngrok-free.app/apagar_aspersores';
+    Http.open("POST", url);
+    Http.send();
+    
+    Http.onreadystatechange = (e) => {
+      console.log(Http.responseText)
+    }
+   
     setTimeout(function() {
       manual.disabled = false;
       document.querySelector(".manual").style.opacity = 1;
@@ -46,8 +57,9 @@ manual.addEventListener('click', function () {
 
   } else {
     console.log('El elemento está marcado');
+    /*
     $.ajax({
-      url: " https://f8ea-2806-10a6-15-7eab-b987-943d-2e97-d7b8.ngrok-free.app/encender_bomba",
+      url: " https://2a4d-2806-10a6-15-7eab-8472-148a-aeab-831f.ngrok-free.app/encender_aspersores",
       type: "POST",
       success: function (response) {
         console.log(response);
@@ -57,6 +69,16 @@ manual.addEventListener('click', function () {
         console.error(error);
       }
     });
+    */
+    const Http = new XMLHttpRequest();
+    const url=' https://2a4d-2806-10a6-15-7eab-8472-148a-aeab-831f.ngrok-free.app/encender_aspersores';
+    Http.open("POST", url);
+    Http.send();
+    
+    Http.onreadystatechange = (e) => {
+      console.log(Http.responseText)
+    }
+
     setTimeout(function() {
       manual.disabled = false;
       document.querySelector(".manual").style.opacity = 1;
@@ -65,4 +87,4 @@ manual.addEventListener('click', function () {
     manual.disabled = true;
     document.querySelector(".manual").style.opacity = 0.5;
   }
-});
+};

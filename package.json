@@ -20,7 +20,7 @@
     "platforms": [
       "browser",
       "android"
-    ],
-    "plugins": {}
-  }
+    ]
+  },
+  "dependencies": {}
 }
