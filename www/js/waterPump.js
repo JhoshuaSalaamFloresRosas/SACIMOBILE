@@ -39,7 +39,7 @@ const manualEncApa=()=>{
     });
     */
     const Http = new XMLHttpRequest();
-    const url=' https://2a4d-2806-10a6-15-7eab-8472-148a-aeab-831f.ngrok-free.app/apagar_aspersores';
+    const url='https://58c3-2806-10a6-15-7eab-ecc3-4b59-fab3-b3d5.ngrok-free.app/apagar_aspersores';
     Http.open("POST", url);
     Http.send();
     
@@ -59,7 +59,7 @@ const manualEncApa=()=>{
     console.log('El elemento está marcado');
     /*
     $.ajax({
-      url: " https://2a4d-2806-10a6-15-7eab-8472-148a-aeab-831f.ngrok-free.app/encender_aspersores",
+      url: " https://a8c8-2806-10a6-15-7eab-8472-148a-aeab-831f.ngrok-free.app/encender_aspersores",
       type: "POST",
       success: function (response) {
         console.log(response);
@@ -71,7 +71,7 @@ const manualEncApa=()=>{
     });
     */
     const Http = new XMLHttpRequest();
-    const url=' https://2a4d-2806-10a6-15-7eab-8472-148a-aeab-831f.ngrok-free.app/encender_aspersores';
+    const url='https://58c3-2806-10a6-15-7eab-ecc3-4b59-fab3-b3d5.ngrok-free.app/encender_aspersores';
     Http.open("POST", url);
     Http.send();
     
